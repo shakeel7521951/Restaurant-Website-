@@ -11,7 +11,7 @@ const MainFunction = () => {
   return (
     <div className='overflow-x-hidden'>
       <Navbar />
-      <Outlet />
+      <Home/>
       <Footer />
     </div>
   );
