@@ -5,6 +5,7 @@ import Navbar from './components/common/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
+import ContactPage from './pages/Contact';
 
 const MainFunction = () => {
   return (
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'services', element: <Services /> },
+      { path: 'contact', element: <ContactPage /> },
     ],
   },
 ]);
