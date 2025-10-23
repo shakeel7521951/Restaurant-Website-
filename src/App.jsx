@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Footer from './components/common/Footer';
 import Navbar from './components/common/Navbar';
 import Home from './pages/Home';
+import Services from './pages/Services';
 import About from './pages/About';
 
 const MainFunction = () => {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
+      { path: 'services', element: <Services /> },
     ],
   },
 ]);
