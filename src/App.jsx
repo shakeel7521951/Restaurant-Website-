@@ -9,7 +9,7 @@ import ContactPage from './pages/Contact';
 
 const MainFunction = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <Outlet />
       <Footer />

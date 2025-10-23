@@ -17,7 +17,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <ContactHeader />
 
       <section className="py-20 px-5 md:px-8 bg-white">
