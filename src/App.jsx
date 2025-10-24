@@ -29,15 +29,18 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
-      { path: 'services', element: <Services /> },
-      { path: 'flyers', element: <Flyers /> },
-      { path: 'menu', element: <Menu /> },
-      { path: 'visitingcard', element: <VisitingCard /> },
-      { path: 'poster', element: <Poster /> },
       { path: 'contact', element: <ContactPage /> },
+
+      // Services routes
+      { path: 'services', element: <Services /> }, // optional landing page for /services
+      { path: 'services/flyers', element: <Flyers /> },
+      { path: 'services/menus', element: <Menu /> },
+      { path: 'services/visiting-cards', element: <VisitingCard /> },
+      { path: 'services/posters', element: <Poster /> },
     ],
   },
 ]);
+
 
 function App() {
   return <RouterProvider router={router} />;

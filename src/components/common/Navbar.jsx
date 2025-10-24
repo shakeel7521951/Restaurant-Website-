@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-[#E9F5FF] shadow-lg">
+    <header className=" w-[100%] top-0 z-50 bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-[#E9F5FF] fixed shadow-lg">
       <nav className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16">
 
