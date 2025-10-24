@@ -7,10 +7,10 @@ import Customer from '../components/services/Customer'
 const Services = () => {
   return (
     <div>
-   <Hero/>
-   <ServicesSection/>
-   <OurProcess/>
-   <Customer/>
+      <Hero />
+      <ServicesSection />
+      <OurProcess />
+      <Customer />
     </div>
   )
 }

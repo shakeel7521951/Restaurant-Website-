@@ -5,13 +5,18 @@ import Navbar from './components/common/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
+import Flyers from './pages/Flyers';
+import Menu from './pages/Menu';
+import VisitingCard from './pages/VisitingCard';
+import Poster from './pages/Poster';
 import ContactPage from './pages/Contact';
 
-const MainFunction = () => {
+// Layout component
+const MainLayout = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className="overflow-x-hidden">
       <Navbar />
-      <Home/>
+      <Outlet /> {/* Child routes render here */}
       <Footer />
     </div>
   );
@@ -20,17 +25,20 @@ const MainFunction = () => {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainFunction />,
+    element: <MainLayout />,
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'services', element: <Services /> },
+      { path: 'flyers', element: <Flyers /> },
+      { path: 'menu', element: <Menu /> },
+      { path: 'visitingcard', element: <VisitingCard /> },
+      { path: 'poster', element: <Poster /> },
       { path: 'contact', element: <ContactPage /> },
     ],
   },
 ]);
 
-// Main App component
 function App() {
   return <RouterProvider router={router} />;
 }
