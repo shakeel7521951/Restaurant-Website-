@@ -5,52 +5,59 @@ import "aos/dist/aos.css";
 const Header = () => {
   const slides = [
     {
-      text: "Welcome to Royal Taste Restaurant",
+      type: "Restaurant",
+      text: "The Restaurant, For the Royal Taste",
+      subText:
+        "Experience the art of fine dining — where passion meets perfection. Fresh ingredients, bold flavors, and unforgettable memories await.",
       image:
         "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      cta1: { text: "View Menu", link: "/menu" },
+      cta2: { text: "Book a Table", link: "/reservation" },
     },
     {
-      text: "Where Every Bite Feels Like Royalty",
+      type: "IT Services",
+      text: "Innovative IT Solutions for Your Business",
+      subText:
+        "Custom software, web development, and IT consulting to help your business thrive in the digital era.",
       image:
-        "https://media.istockphoto.com/id/649668978/photo/pub-food-and-drinks.jpg?s=612x612&w=0&k=20&c=kdEaFfAAFCwj_-XkxoqYBohpdePqChQLZ0kPU2oGxuI=",
+        "https://blog.tiinfotech.com/wp-content/uploads/2023/09/62be2287285099f561a48ee2_IT-services-.jpg",
+      cta1: { text: "Explore Services", link: "/services" },
+      cta2: { text: "Contact Us", link: "/contact" },
     },
     {
-      text: "Taste the Luxury You Deserve",
+      type: "Flyers",
+      text: "Creative Flyers to Promote Your Brand",
+      subText:
+        "Professional designs for flyers, posters, and digital graphics that grab attention and grow your business.",
       image:
-        "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    },
-    {
-      text: "Fine Dining. Perfected Every Day.",
-      image:
-        "https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://www.easysigns.com.au/uploads/content/products/gallery/FLYER_GALLERY_C.jpg",
+      cta1: { text: "See Designs", link: "/flyers" },
+      cta2: { text: "Get a Quote", link: "/contact" },
     },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [fade, setFade] = useState(true);
 
+  // ✅ Initialize AOS only once
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+  }, []);
 
+  // ✅ Handle automatic slide changes every 5 seconds
+  useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // fade out current image & text
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % slides.length);
-        setFade(true); // fade in next image & text
-      }, 1000); // wait for fade-out to complete
-    }, 4000); // change every 4 seconds
-
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   const currentSlide = slides[currentIndex];
 
   return (
-    <div className="bg-[#060145] min-h-screen text-white overflow-hidden relative">
-      {/* Background Section */}
+    <div className="bg-[#060145] min-h-screen text-white relative overflow-x-hidden">
       <section className="relative flex items-center justify-center h-[100vh] overflow-hidden">
-        {/* Fading Background Images */}
-        <div className="absolute inset-0">
+        {/* Background Images */}
+        <div className="absolute inset-0 w-full h-full">
           {slides.map((slide, index) => (
             <div
               key={index}
@@ -65,55 +72,59 @@ const Header = () => {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#060145]/70 via-[#060145]/60 to-[#060145]"></div>
 
-        {/* Content Section */}
-        <div className="relative z-10 text-center px-6 md:px-12 max-w-3xl">
-          <h1
-            className={`text-4xl md:text-6xl font-extrabold leading-tight mb-6 transition-opacity duration-1000 ${
-              fade ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {currentSlide.text.includes("Royal Taste Restaurant") ? (
-              <>
-                Welcome to{" "}
-                <span className="text-[#F3E607]">Royal Taste Restaurant</span>
-              </>
-            ) : currentSlide.text.includes("Royalty") ? (
-              <>
-                Where Every Bite Feels Like{" "}
-                <span className="text-[#F3E607]">Royalty</span>
-              </>
-            ) : (
-              <span className="text-[#F3E607]">{currentSlide.text}</span>
-            )}
+        {/* Text Content */}
+        <div
+          className="relative z-10 text-center px-3 md:px-6 max-w-full md:max-w-3xl mx-auto"
+          data-aos="fade-up"
+        >
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
+            {(() => {
+              const highlightWord =
+                currentSlide.type === "Restaurant"
+                  ? "Royal Taste"
+                  : currentSlide.type === "IT Services"
+                  ? "IT Solutions"
+                  : "Flyers";
+
+              if (currentSlide.text.includes(highlightWord)) {
+                const [before, after] = currentSlide.text.split(highlightWord);
+                return (
+                  <>
+                    <span className="text-white">{before}</span>{" "}
+                    <span className="text-[#F3E607]">{highlightWord}</span>
+                    <span className="text-white">{after}</span>
+                  </>
+                );
+              } else {
+                return <span className="text-white">{currentSlide.text}</span>;
+              }
+            })()}
           </h1>
 
-          <p
-            className={`text-lg md:text-xl text-gray-200 mb-8 transition-opacity duration-1000 ${
-              fade ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            Experience the art of fine dining — where passion meets perfection.  
-            Fresh ingredients, bold flavors, and unforgettable memories await.
+          {/* Sub Text */}
+          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+            {currentSlide.subText}
           </p>
 
-          {/* Buttons — Fixed (Don't Fade) */}
+          {/* CTA Buttons */}
           <div className="flex justify-center space-x-4 mt-4" data-aos="zoom-in">
             <a
-              href="/menu"
+              href={currentSlide.cta1.link}
               className="bg-[#F3E607] text-[#060145] font-semibold px-6 py-3 rounded-xl hover:bg-yellow-300 transition transform hover:scale-105 shadow-lg"
             >
-              View Menu
+              {currentSlide.cta1.text}
             </a>
             <a
-              href="/reservation"
+              href={currentSlide.cta2.link}
               className="border-2 border-[#F3E607] text-[#F3E607] font-semibold px-6 py-3 rounded-xl hover:bg-[#F3E607] hover:text-[#060145] transition transform hover:scale-105"
             >
-              Book a Table
+              {currentSlide.cta2.text}
             </a>
           </div>
         </div>
 
-        {/* Bottom Gradient Effect */}
+        {/* Bottom Gradient */}
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#060145] via-[#060145]/70 to-transparent"></div>
       </section>
     </div>

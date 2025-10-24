@@ -1,15 +1,20 @@
-import CoffeeSection from '../components/home/CoffeeSection'
+import AboutUs from '../components/home/AboutUs'
 import Header from '../components/home/Header'
-import OurMenu from '../components/home/OurMenu'
+import OurFaq from '../components/home/OurFaq'
+import OurProgress from '../components/home/OurProgress'
+import OurServices from '../components/home/OurServices'
 import WhyChooseUs from '../components/home/WhyChooseUs'
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Header />
-      <OurMenu/>
-      <CoffeeSection/>
-      <WhyChooseUs/>
+         <WhyChooseUs/> 
+      <OurServices/>
+      <OurProgress/>
+      <AboutUs/>
+      <OurFaq/>
+   
     </div>
   )
 }
