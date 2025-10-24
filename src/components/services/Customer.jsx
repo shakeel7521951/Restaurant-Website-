@@ -182,7 +182,7 @@ const Customer = () => {
             data-aos-delay="900"
             className="text-center mt-12"
           >
-            <button className="bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-white px-10 py-4 rounded-full font-bold text-lg hover:from-[#F9D91C] hover:to-[#ffdf33] hover:text-[#060145] transition-all duration-500 transform hover:scale-105 shadow-xl text-nowrap">
+            <button className="bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-white px-5 py-2 rounded-full font-bold text-lg hover:from-[#F9D91C] hover:to-[#ffdf33] hover:text-[#060145] transition-all duration-500 transform hover:scale-105 shadow-xl text-nowrap">
               Read More Success Stories
             </button>
           </div>

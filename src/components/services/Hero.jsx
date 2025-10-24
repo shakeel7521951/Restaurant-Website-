@@ -63,7 +63,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row justify-center gap-6"
           >
             {/* Primary Button */}
-            <button className="group bg-[#F9D91C] text-[#060145] px-10 py-5 rounded-full font-bold text-lg transition-all duration-700 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-[#F9D91C]/40 relative overflow-hidden">
+            <button className="group bg-[#F9D91C] text-[#060145] px-5 py-2 rounded-full font-bold text-lg transition-all duration-700 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-[#F9D91C]/40 relative overflow-hidden">
               <span className="relative z-10 group-hover:tracking-wide transition-all duration-700">
                 Get Started
               </span>
@@ -71,7 +71,7 @@ const Hero = () => {
             </button>
 
             {/* Secondary Button */}
-            <button className="group border-2 border-[#E9F5FF] text-[#E9F5FF] px-10 py-5 rounded-full font-semibold text-lg transition-all duration-700 ease-in-out hover:bg-[#E9F5FF] hover:text-[#060145] hover:border-[#F9D91C] hover:scale-105 hover:shadow-2xl hover:shadow-[#E9F5FF]/20 relative overflow-hidden">
+            <button className="group border-2 border-[#E9F5FF] text-[#E9F5FF] px-5 py-2 rounded-full font-semibold text-lg transition-all duration-700 ease-in-out hover:bg-[#E9F5FF] hover:text-[#060145] hover:border-[#F9D91C] hover:scale-105 hover:shadow-2xl hover:shadow-[#E9F5FF]/20 relative overflow-hidden">
               <span className="relative z-10 group-hover:tracking-wide transition-all duration-700">
                 Learn More
               </span>

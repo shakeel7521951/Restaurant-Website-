@@ -194,7 +194,7 @@ const ServicesSection = () => {
           data-aos-delay="700"
           className="text-center mt-12"
         >
-          <button className="bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-white px-10 py-4 rounded-full font-bold text-lg hover:from-[#F9D91C] hover:to-[#ffdf33] hover:text-[#060145] transition-all duration-700 ease-in-out shadow-xl hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 group relative overflow-hidden">
+          <button className="bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-white px-5 py-2 rounded-full font-bold text-lg hover:from-[#F9D91C] hover:to-[#ffdf33] hover:text-[#060145] transition-all duration-700 ease-in-out shadow-xl hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 group relative overflow-hidden">
             <span className="relative z-10">View All Services</span>
             <div className="absolute inset-0 bg-gradient-to-r from-[#F9D91C] to-[#ffdf33] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out origin-left"></div>
           </button>

@@ -159,7 +159,7 @@ const OurProcess = () => {
           data-aos-delay="700"
           className="mt-12 relative z-10"
         >
-          <button className="bg-[#F9D91C] text-[#060145] px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:scale-105 hover:shadow-2xl hover:shadow-[#F9D91C]/40 transition-all duration-700 ease-in-out shadow-lg group relative overflow-hidden">
+          <button className="bg-[#F9D91C] text-[#060145] px-5 py-2 rounded-full font-bold text-lg hover:bg-white hover:scale-105 hover:shadow-2xl hover:shadow-[#F9D91C]/40 transition-all duration-700 ease-in-out shadow-lg group relative overflow-hidden">
             <span className="relative z-10">Start Your Project</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
           </button>
