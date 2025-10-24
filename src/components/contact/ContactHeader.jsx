@@ -27,7 +27,7 @@ const ContactHeader = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-[#060145] via-[#0d0c6d] to-[#1a1a8b] text-white pt-20 pb-20 px-5 text-center overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#060145] via-[#0d0c6d] to-[#1a1a8b] text-white pt-33 pb-20 px-5 text-center overflow-hidden">
       {/* Background Circles */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-24 h-24 bg-[#F9D91C] rounded-full blur-2xl"></div>

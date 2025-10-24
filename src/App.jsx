@@ -10,6 +10,8 @@ import Menu from './pages/Menu';
 import VisitingCard from './pages/VisitingCard';
 import Poster from './pages/Poster';
 import ContactPage from './pages/Contact';
+import LoginPage from './components/common/LoginPage';
+import SignupPage from './components/common/SignupPage';
 
 // Layout component
 const MainLayout = () => {
@@ -37,6 +39,9 @@ const router = createBrowserRouter([
       { path: 'services/menus', element: <Menu /> },
       { path: 'services/visiting-cards', element: <VisitingCard /> },
       { path: 'services/posters', element: <Poster /> },
+      { path: 'login', element: <LoginPage /> },
+      { path: 'signup', element: <SignupPage /> },
+
     ],
   },
 ]);
