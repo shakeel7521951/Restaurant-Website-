@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import allbrands from "../../Images/allbrands.jpeg";
+import allbrands from "../../Images/Allbrands.jpeg";
 
 const services = [
   { id: 1, title: "Flyer & Printing Services" },
