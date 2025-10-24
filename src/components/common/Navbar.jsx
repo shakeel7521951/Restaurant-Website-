@@ -105,6 +105,16 @@ const Navbar = () => {
               )}
             </div>
 
+            {/* Contact Link after Services */}
+            <Link
+              to="/contact"
+              className="relative group text-[#E9F5FF] hover:text-[#F9D91C] transition-colors duration-300"
+              data-aos="fade-right"
+            >
+              Contact
+              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#F9D91C] group-hover:w-full group-hover:left-0 transition-all duration-500"></span>
+            </Link>
+
             {/* Languages Dropdown */}
             <div
               className="relative"
@@ -139,16 +149,6 @@ const Navbar = () => {
                 </ul>
               )}
             </div>
-
-            {/* Contact Link */}
-            <Link
-              to="/contact"
-              className="relative group text-[#E9F5FF] hover:text-[#F9D91C] transition-colors duration-300"
-              data-aos="fade-right"
-            >
-              Contact
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#F9D91C] group-hover:w-full group-hover:left-0 transition-all duration-500"></span>
-            </Link>
           </div>
 
           {/* Desktop Login */}
@@ -173,7 +173,10 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden bg-[#060145] border-t border-[#1a1a6b] shadow-inner rounded-b-lg py-3 space-y-2" data-aos="fade-down">
+          <div
+            className="md:hidden bg-[#060145] border-t border-[#1a1a6b] shadow-inner rounded-b-lg py-3 space-y-2"
+            data-aos="fade-down"
+          >
             {MAIN_LINKS.map((link) => (
               <Link
                 key={link.name}
@@ -191,7 +194,7 @@ const Navbar = () => {
                 <Link to="/services" className="flex-1">Services</Link>
                 <FaChevronDown className="text-[#F9D91C] transition-transform group-open:rotate-180" size={12} />
               </summary>
-              <div className="mt-2 pl-4 text-sm space-y-1">
+              <div className="mt-1 pl-4 text-sm space-y-1">
                 {SERVICE_ITEMS.map((item) => (
                   <Link
                     key={item.name}
@@ -204,6 +207,15 @@ const Navbar = () => {
                 ))}
               </div>
             </details>
+
+            {/* Contact Mobile */}
+            <Link
+              to="/contact"
+              className="block px-5 py-2 text-[#E9F5FF] hover:text-[#F9D91C]"
+              onClick={handleMobileLinkClick}
+            >
+              Contact
+            </Link>
 
             {/* Languages Mobile */}
             <details className="px-5 py-2 group">
@@ -223,15 +235,6 @@ const Navbar = () => {
                 ))}
               </div>
             </details>
-
-            {/* Contact Mobile */}
-            <Link
-              to="/contact"
-              className="block px-5 py-2 text-[#E9F5FF] hover:text-[#F9D91C]"
-              onClick={handleMobileLinkClick}
-            >
-              Contact
-            </Link>
 
             {/* Mobile Login */}
             <div className="px-5 pt-2">

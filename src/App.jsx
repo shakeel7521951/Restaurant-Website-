@@ -10,8 +10,8 @@ import Menu from './pages/Menu';
 import VisitingCard from './pages/VisitingCard';
 import Poster from './pages/Poster';
 import ContactPage from './pages/Contact';
-import LoginPage from './components/common/LoginPage';
-import SignupPage from './components/common/SignupPage';
+// import LoginPage from './components/common/LoginPage';
+// import SignupPage from './components/common/SignupPage';
 import WhatSapp from './components/common/WhatSapp';
 
 // Layout component
@@ -36,13 +36,13 @@ const router = createBrowserRouter([
       { path: 'contact', element: <ContactPage /> },
 
       // Services routes
-      { path: 'services', element: <Services /> }, // optional landing page for /services
+      { path: 'services', element: <Services /> }, 
       { path: 'services/flyers', element: <Flyers /> },
       { path: 'services/menus', element: <Menu /> },
       { path: 'services/visiting-cards', element: <VisitingCard /> },
       { path: 'services/posters', element: <Poster /> },
-      { path: 'login', element: <LoginPage /> },
-      { path: 'signup', element: <SignupPage /> },
+      // { path: 'login', element: <LoginPage /> },
+      // { path: 'signup', element: <SignupPage /> },
 
     ],
   },
@@ -60,4 +60,3 @@ export default App;
 
 
 
-// mujay resturant website ka inder services ma VisitingCard ka page desgin karna ha please ap mujay ais ka page desgin kar do jis ka start ma hero section ho aur phair ais ma jo VisitingCard ka realted data ho aur phair ais ma khud sa 1more sections add kar dana lakin ya all page VisitingCard ka related ho aur make it responsive ...aur ais ko dakh kar color secheam use karin ha #060145 #060145 #E9F5FF #F9D91C ya Mujay React.js aur javascript , tailwind css, react-icons aur aos aniMation use kar ka desgin kar ka do
