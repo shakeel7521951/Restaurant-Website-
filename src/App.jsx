@@ -12,11 +12,13 @@ import Poster from './pages/Poster';
 import ContactPage from './pages/Contact';
 import LoginPage from './components/common/LoginPage';
 import SignupPage from './components/common/SignupPage';
+import WhatSapp from './components/common/WhatSapp';
 
 // Layout component
 const MainLayout = () => {
   return (
     <div className="overflow-x-hidden">
+      <WhatSapp/>
       <Navbar />
       <Outlet /> {/* Child routes render here */}
       <Footer />
