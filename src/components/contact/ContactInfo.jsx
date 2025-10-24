@@ -6,17 +6,17 @@ const ContactInfo = () => {
     {
       icon: <FaMapMarkerAlt className="text-[#060145] text-2xl" />,
       title: "Address",
-      text: "123 Main Street, City, Country",
+      text: "AZService restaurant Bar Hotels ",
     },
     {
       icon: <FaPhoneAlt className="text-[#060145] text-2xl" />,
       title: "Phone",
-      text: "+123 456 7890",
+      text: "+601128246982",
     },
     {
       icon: <FaEnvelope className="text-[#060145] text-2xl" />,
       title: "Email",
-      text: "info@example.com",
+      text: "azitservicessdmbhd@gmail.com",
     },
   ];
 
