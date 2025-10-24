@@ -41,14 +41,14 @@ const OurFaq = () => {
 
   return (
     <section className="w-full py-20 px-6 sm:px-10 md:px-16 bg-gradient-to-b from-white via-gray-50 to-gray-100">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative">
-        {/* Left Side - Image */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12 relative">
+        {/* Right Side - Image */}
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           className="w-full lg:w-1/2 flex justify-center"
         >
           <img
-            src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            src="https://thumbs.dreamstime.com/b/business-button-faq-web-icon-computer-sign-51066407.jpg"
             alt="Restaurant Digital Workspace"
             className="rounded-2xl shadow-2xl w-full max-w-[650px] h-[520px] object-cover transform hover:scale-105 transition-transform duration-700"
           />
@@ -57,13 +57,13 @@ const OurFaq = () => {
         {/* Vertical Line Divider */}
         <div className="hidden lg:block w-[2px] h-[480px] bg-gray-300 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
 
-        {/* Right Side - FAQ Section */}
+        {/* Left Side - FAQ Section */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           className="w-full lg:w-1/2 bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 relative z-10"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#060145] mb-8 tracking-tight">
-            Restaurant,IT & Branding FAQs
+            Restaurant, IT & Branding FAQs
           </h2>
 
           <div className="space-y-4 sm:space-y-5">
