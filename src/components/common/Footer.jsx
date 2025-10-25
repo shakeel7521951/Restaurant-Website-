@@ -123,7 +123,7 @@ const Footer = () => {
           </h3>
           <div className="space-y-3 text-sm">
             <p className="text-gray-300">
-              Email: <a href="mailto:azitservicessdmbhd@gmail.com" className="hover:text-yellow-400 transition">info@brandname.com</a>
+              Email: <a href="mailto:azitservicessdmbhd@gmail.com" className="hover:text-yellow-400 transition">azitservicessdmbhd@gmail.com</a>
             </p>
             <p className="text-gray-300">
               Phone: <a href="tel:+601128246982" className="hover:text-yellow-400 transition">+60 1128246982</a>

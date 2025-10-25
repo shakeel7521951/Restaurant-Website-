@@ -6,7 +6,7 @@ const ContactInfo = () => {
     {
       icon: <FaMapMarkerAlt className="text-[#060145] text-2xl" />,
       title: "Address",
-      text: "AZService restaurant Bar Hotels ",
+      text: "M City AZService restaurant Bar Hotels ",
     },
     {
       icon: <FaPhoneAlt className="text-[#060145] text-2xl" />,
