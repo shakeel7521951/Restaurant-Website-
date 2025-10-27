@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import logo from "../../assets/logo.png"
 const BRAND_PRIMARY = "#060145";
 const BRAND_SECONDARY = "#F9D91C";
 
@@ -43,7 +43,14 @@ const Footer = () => {
 
         {/* Brand & About */}
         <div data-aos="fade-up">
-          <h2 className="text-3xl font-extrabold mb-4">BrandName</h2>
+           <div className="flex items-center space-x-2 cursor-pointer">
+                    <img
+                      src={logo}
+                      alt="Restaurant Logo"
+                      className="w-16 h-16 object-contain rounded-full shadow-md hover:scale-105 transition-transform duration-500"
+                    />
+                    
+                  </div>
           <p className="text-gray-300 text-sm leading-relaxed">
             We provide high-quality print and digital solutions, including Flyers, Menus, Visiting Cards, Posters, and Web Development services.
           </p>
