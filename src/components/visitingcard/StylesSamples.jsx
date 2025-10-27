@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import imgage1 from "../../assets/1.png"
+import imgage2 from "../../assets/2.png"
+import imgage3 from "../../assets/3.png"
+import imgage4 from "../../assets/4.png"
+import imgage5 from "../../assets/5.png"
+import imgage6 from "../../assets/6.png"
 import {
   FaPalette,
   FaStar,
@@ -17,7 +23,7 @@ const StylesSamples = () => {
       title: "Classic & Elegant",
       description:
         "Perfect for fine dining restaurants looking for a refined, timeless impression.",
-      img: "https://i.ytimg.com/vi/N-CQtxpxSEY/sddefault.jpg",
+      img: imgage1,
       animation: "fade-up",
       delay: 100,
       bgGradient: "from-[#0a0a5c] via-[#1a1a8c] to-[#060145]",
@@ -28,7 +34,7 @@ const StylesSamples = () => {
       title: "Modern & Minimal",
       description:
         "Sleek, clean, and bold — perfect for contemporary food brands and cafes.",
-      img: "https://i.ytimg.com/vi/LZeR6ORrmK4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWUlemXpT0FquPjK9h9mUBNPzD0A",
+      img:imgage2,
       animation: "fade-down",
       delay: 200,
       bgGradient: "from-[#060145] via-[#0a0a7c] to-[#1a1a9c]",
@@ -39,7 +45,7 @@ const StylesSamples = () => {
       title: "Creative & Trendy",
       description:
         "Fun, vibrant designs that make your restaurant stand out instantly.",
-      img: "https://i.pinimg.com/736x/88/57/d3/8857d3a9262b5b55922054b32e7f1b9e.jpg",
+      img: imgage3,
       animation: "fade-right",
       delay: 300,
       bgGradient: "from-[#1a1a6e] via-[#060145] to-[#0a0a8c]",
@@ -50,7 +56,7 @@ const StylesSamples = () => {
       title: "Luxury & Premium",
       description:
         "High-end designs with sophisticated elements for premium establishments.",
-      img: "https://i.pinimg.com/1200x/e9/b3/81/e9b3814669aee13e8488725d87078f08.jpg",
+      img: imgage4,
       animation: "fade-left",
       delay: 400,
       bgGradient: "from-[#060145] via-[#0a0a6c] to-[#1a1a7e]",
@@ -61,7 +67,7 @@ const StylesSamples = () => {
       title: "Innovative & Unique",
       description:
         "Cutting-edge designs that push creative boundaries and capture attention.",
-      img: "https://i.pinimg.com/736x/c5/ae/98/c5ae98c1a5c3532eb14866495b83ce28.jpg",
+      img: imgage5,
       animation: "zoom-in",
       delay: 500,
       bgGradient: "from-[#0a0a7c] via-[#060145] to-[#1a1a8e]",
@@ -72,7 +78,7 @@ const StylesSamples = () => {
       title: "Custom & Personal",
       description:
         "Tailored designs that perfectly reflect your restaurant's unique personality.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5f5WEbwEXkriAl59tDaOUBCdgy4f5raV-UbpZCOOQBS7hihlCsaTLNlRKJJ3IHz35ZA4&usqp=CAU",
+      img: imgage6,
       animation: "flip-up",
       delay: 600,
       bgGradient: "from-[#1a1a7e] via-[#060145] to-[#0a0a8e]",

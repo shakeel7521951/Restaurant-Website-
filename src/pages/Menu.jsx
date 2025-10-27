@@ -67,6 +67,69 @@ const MenusPage = () => {
     description:
       "Crisp romaine tossed with creamy Caesar dressing, shaved parmesan, and crunchy garlic croutons.",
     price: 8,
+    img: "https://cdn.pixabay.com/photo/2022/04/20/14/39/burger-7145332_1280.png",
+  },
+  {
+    id: 7,
+    category: "main course",
+    name: "Pasta alla Carbonara",
+    description:
+      "Authentic Italian pasta with pancetta, egg yolk, parmesan, and cracked black pepper in a creamy sauce.",
+    price: 17,
+    img: "https://cdn.pixabay.com/photo/2021/09/28/15/21/pizza-6664791_1280.jpg",
+  },
+  {
+    id: 8,
+    category: "desserts",
+    name: "Classic Tiramisu",
+    description:
+      "Layers of espresso-soaked ladyfingers and mascarpone cream, finished with rich cocoa powder.",
+    price: 9,
+    img: "https://media.istockphoto.com/id/2167797581/photo/close-up-shot-of-a-young-adult-is-seen-enjoying-a-taiwanese-style-spicy-dumplings-braised.jpg?s=2048x2048&w=is&k=20&c=gstnvatDTlocJs9-zcBDzu4e3G7eXg25Nj6qOI1GSz4=",
+  },
+  {
+    id: 9,
+    category: "drinks",
+    name: "Strawberry Bliss Smoothie",
+    description:
+      "A creamy blend of fresh strawberries, yogurt, and honey for a refreshing and healthy treat.",
+    price: 7,
+    img: "https://cdn.pixabay.com/photo/2017/03/10/13/49/fast-food-2132863_1280.jpg",
+  },
+  {
+    id: 10,
+    category: "starters",
+    name: "Cheese-Stuffed Mushrooms",
+    description:
+      "Oven-baked mushrooms filled with herbed cream cheese and breadcrumbs, golden and delicious.",
+    price: 9,
+    img: "https://media.istockphoto.com/id/1151788047/photo/cold-rice-noodles.jpg?s=2048x2048&w=is&k=20&c=OMsVU-eyUuBumAS57NLF4repo_6ivpHPcORldedaVAA=",
+  },
+  {
+    id: 11,
+    category: "main course",
+    name: "Chicken Teriyaki Bowl",
+    description:
+      "Grilled chicken glazed in house-made teriyaki sauce, served with steamed rice and sesame vegetables.",
+    price: 18,
+    img: "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+  },
+  {
+    id: 12,
+    category: "desserts",
+    name: "New York Cheesecake",
+    description:
+      "Rich and creamy cheesecake with a buttery graham cracker crust and a hint of vanilla.",
+    price: 9,
+    img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FSeries%2F2024-07-how-to-make-perfect-cheesecake%2Fhow-to-make-perfect-cheesecake-319",
+  },
+  {
+    id: 6,
+    category: "starters",
+    name: "Classic Caesar Salad",
+    description:
+      "Crisp romaine tossed with creamy Caesar dressing, shaved parmesan, and crunchy garlic croutons.",
+    price: 8,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_QHLySdpuhk3weCNYHxYp6tc2naOquvCQQ&s",
   },
   {
