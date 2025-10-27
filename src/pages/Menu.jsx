@@ -7,6 +7,11 @@ import img2 from ".././assets/2menu.jpg";
 import img3 from ".././assets/3menu.jpg";
 import img4 from ".././assets/4menu.jpg";
 import img5 from ".././assets/5menu.jpg";
+import img6 from ".././assets/menu1.jpg";
+import img7 from ".././assets/menu2.jpg";
+import img8 from ".././assets/menu3.jpg";
+import img9 from ".././assets/menu4.jpg";
+import img10 from ".././assets/menu5.jpg";
 import { motion } from "framer-motion";
 
 const MenusPage = () => {
@@ -59,6 +64,51 @@ const MenusPage = () => {
       "Juicy sirloin steak grilled to your liking, paired with roasted seasonal vegetables and herb butter.",
     price: 24,
     img:img5,
+  },
+  {
+    id: 1,
+    category: "starters",
+    name: "Bruschetta al Pomodoro",
+    description:
+      "Crispy grilled bread topped with ripe tomatoes, fresh basil, and a drizzle of olive oil.",
+    price: 7,
+    img: img6,
+  },
+  {
+    id: 2,
+    category: "main course",
+    name: "Herb-Grilled Salmon",
+    description:
+      "Tender salmon fillet seasoned with fresh herbs and grilled to perfection, served with lemon butter sauce.",
+    price: 19,
+    img: img7,
+  },
+  {
+    id: 3,
+    category: "desserts",
+    name: "Molten Chocolate Lava Cake",
+    description:
+      "Decadent warm chocolate cake with a rich, flowing center and a scoop of vanilla ice cream.",
+    price: 9,
+    img: img8,
+  },
+  {
+    id: 4,
+    category: "drinks",
+    name: "Classic Mojito",
+    description:
+      "A refreshing blend of fresh mint, lime juice, sugar, and sparkling soda with a hint of rum.",
+    price: 8,
+    img: img9,
+  },
+  {
+    id: 5,
+    category: "main course",
+    name: "Grilled Steak & Seasonal Vegetables",
+    description:
+      "Juicy sirloin steak grilled to your liking, paired with roasted seasonal vegetables and herb butter.",
+    price: 24,
+    img:img10,
   },
   {
     id: 6,
