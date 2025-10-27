@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import logo from "../../assets/logo.png"
 const MAIN_LINKS = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -44,14 +44,14 @@ const Navbar = () => {
     <header className="w-full fixed top-0 z-50 bg-gradient-to-r from-[#060145] to-[#1a1a6b] text-[#E9F5FF] shadow-lg">
       <nav className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center gap-3 text-[#F9D91C] font-bold text-2xl md:text-3xl"
-            onClick={handleMobileLinkClick}
-          >
-            BrandName
-          </Link>
+         <div className="flex items-center space-x-2 cursor-pointer">
+          <img
+            src={logo}
+            alt="Restaurant Logo"
+            className="w-16 h-16 object-contain rounded-full shadow-md hover:scale-105 transition-transform duration-500"
+          />
+          
+        </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8 font-medium mx-auto">
