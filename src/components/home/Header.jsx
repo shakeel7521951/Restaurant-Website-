@@ -11,8 +11,8 @@ const Header = () => {
         "Experience the art of fine dining — where passion meets perfection. Fresh ingredients, bold flavors, and unforgettable memories await.",
       image:
         "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      cta1: { text: "View Menu", link: "/menu" },
-      cta2: { text: "Book a Table", link: "/reservation" },
+      cta1: { text: "View Menu", link: "services/menus" },
+      cta2: { text: "See Visiting Card", link: "services/visiting-cards" },
     },
     {
       type: "IT Services",
@@ -31,7 +31,7 @@ const Header = () => {
         "Professional designs for flyers, posters, and digital graphics that grab attention and grow your business.",
       image:
         "https://www.easysigns.com.au/uploads/content/products/gallery/FLYER_GALLERY_C.jpg",
-      cta1: { text: "See Designs", link: "/flyers" },
+      cta1: { text: "See Flyers", link: "services/flyers" },
       cta2: { text: "Get a Quote", link: "/contact" },
     },
   ];
